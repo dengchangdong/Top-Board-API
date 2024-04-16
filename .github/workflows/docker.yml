@@ -33,7 +33,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            imsyy/dailyhot-api
+            dengchangdong/topboard-api
             ghcr.io/${{ github.repository }}
 
       - name: Build and push Docker image
