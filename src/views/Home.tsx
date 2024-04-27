@@ -4,7 +4,7 @@ import Layout from "./Layout.js";
 
 const Home: FC = () => {
   return (
-    <Layout title="DailyHot API">
+    <Layout title="Trands API">
       <main className="home">
         <div className="img">
           <img src="/ico/favicon.png" alt="logo" />
