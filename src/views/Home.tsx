@@ -6,9 +6,6 @@ const Home: FC = () => {
   return (
     <Layout title="Trands API">
       <main className="home">
-        <div className="img">
-          <img src="ico/favicon.png" alt="logo" />
-        </div>
         <div className="title">
           <h1 className="title-text">DailyHot API</h1>
           <span className="title-tip">服务已正常运行</span>
@@ -34,7 +31,7 @@ const Home: FC = () => {
       {html`
         <script>
           document.getElementById("test-button").addEventListener("click", () => {
-            window.location.href = "all";
+            window.location.href = "/trands/all";
           });
         </script>
       `}
