@@ -88,14 +88,14 @@ for (let index = 0; index < allRoutePath.length; index++) {
 }
 
 // 获取全部路由
-app.get("/all", (c) =>
+app.get("/trands/all", (c) =>
   c.json(
     {
       code: 200,
       count: allRoutePath.length,
       routes: allRoutePath.map((path) => ({
         name: path,
-        path: `/${path}`,
+        path: `/trands/${path}`,
       })),
     },
     200,
