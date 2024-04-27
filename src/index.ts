@@ -3,8 +3,8 @@ import { config } from "./config.js";
 import logger from "./utils/logger.js";
 import app from "./app.js";
 
-logger.info(`🔥 DailyHot API 成功在端口 ${config.PORT} 上运行`);
-logger.info(`🔗 Local: 👉 http://localhost:${config.PORT}`);
+logger.info(`Trands API 成功在端口 ${config.PORT} 上运行`);
+logger.info(`Local: http://localhost:${config.PORT}`);
 
 // 启动服务器
 const server = serve({
