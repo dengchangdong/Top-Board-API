@@ -32,17 +32,17 @@ app.use(
   "/*",
   serveStatic({
     root: "./public",
-    rewriteRequestPath: (path) => (path === "/favicon.ico" ? "/favicon.png" : path),
+    rewriteRequestPath: (path) => (path === "/trands/favicon.ico" ? "favicon.png" : path),
   }),
 );
 
 // 主路由
-app.route("/", registry);
+app.route("/trands/", registry);
 
 // robots
-app.get("/robots.txt", robotstxt);
+app.get("/trands/robots.txt", robotstxt);
 // 首页
-app.get("/", (c) => c.html(<Home />));
+app.get("/trands/", (c) => c.html(<Home />));
 // 404
 app.notFound((c) => c.html(<NotFound />, 404));
 // error
