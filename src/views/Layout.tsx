@@ -133,7 +133,7 @@ const Layout: FC<LayoutProps> = (props) => {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta charset="utf-8" />
         <title>{props.title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
         <meta name="description" content="今日热榜 API，一个聚合热门数据的 API 接口" />
         <Style>{globalClass}</Style>
       </head>
