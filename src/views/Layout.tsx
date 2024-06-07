@@ -63,6 +63,10 @@ const Layout: FC = (props) => {
         font-weight: bold;
         margin-bottom: 12px;
       }
+      .title .title-tip {
+        font-size: 20px;
+        opacity: 0.8;
+      }
     }
   `;
   return (
