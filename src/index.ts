@@ -10,8 +10,8 @@ const serveHotApi = (port: number = config.PORT) => {
       fetch: app.fetch,
       port,
     });
-    logger.info(`🔥 DailyHot API 成功在端口 ${port} 上运行`);
-    logger.info(`🔗 Local: 👉 http://localhost:${port}`);
+    logger.info(`FEEF API 成功在端口 ${port} 上运行`);
+    logger.info(`Local: http://localhost:${port}`);
     return apiServer;
   } catch (error) {
     logger.error(error);
