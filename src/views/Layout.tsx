@@ -67,6 +67,13 @@ const Layout: FC = (props) => {
         font-size: 20px;
         opacity: 0.8;
       }
+      .title .content {
+        margin-top: 30px;
+        display: flex;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px dashed var(--text-color);
+      }
     }
   `;
   return (
