@@ -52,16 +52,6 @@ const Layout: FC = (props) => {
         margin: 20px;
         height: 100%;
       }
-      .img {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 20px;
-      }
-      .img img,
-      .img svg {
-        width: 100%;
-        height: 100%;
-      }
       .title {
         display: flex;
         flex-direction: column;
@@ -72,53 +62,6 @@ const Layout: FC = (props) => {
         font-size: 28px;
         font-weight: bold;
         margin-bottom: 12px;
-      }
-      .title .title-tip {
-        font-size: 20px;
-        opacity: 0.8;
-      }
-      .title .content {
-        margin-top: 30px;
-        display: flex;
-        padding: 20px;
-        border-radius: 12px;
-        border: 1px dashed var(--text-color);
-      }
-      .control {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-      .control button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: var(--text-color);
-        border: var(--text-color) solid;
-        background-color: var(--text-color-hover);
-        border-radius: 8px;
-        padding: 8px 12px;
-        margin: 0 8px;
-        transition:
-          color 0.3s,
-          background-color 0.3s;
-        cursor: pointer;
-      }
-      .control button .btn-icon {
-        width: 22px;
-        height: 22px;
-        margin-right: 8px;
-      }
-      .control button .btn-text {
-        font-size: 14px;
-      }
-      .control button:hover {
-        border: var(--text-color) solid;
-        background: var(--text-color);
-        color: var(--text-color-hover);
-      }
-      .control button i {
-        margin-right: 6px;
       }
     }
   `;
