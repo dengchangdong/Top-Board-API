@@ -11,6 +11,7 @@ const Error: FC = (props) => {
           <span className="title-tip">程序执行出错</span>
           {props?.error ? <p className="content">{props.error}</p> : null}
         </div>
+      </main>
     </Layout>
   );
 };
