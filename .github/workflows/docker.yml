@@ -35,7 +35,6 @@ jobs:
           file: ./Dockerfile
           platforms: |
             linux/amd64
-            linux/arm64
           push: true
           labels: ${{ steps.meta.outputs.labels }}
           tags: |
