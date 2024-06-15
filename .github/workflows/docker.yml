@@ -39,5 +39,5 @@ jobs:
           push: true
           labels: ${{ steps.meta.outputs.labels }}
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/dailytrands-api:${{ github.ref_name }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/dailytrands-api:latest
+            ${{ secrets.DOCKER_USERNAME }}/dailytrands-api:${{ github.ref_name }}
+            ${{ secrets.DOCKER_USERNAME }}/dailytrands-api:latest
