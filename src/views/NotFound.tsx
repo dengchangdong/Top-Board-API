@@ -10,6 +10,7 @@ const NotFound: FC = () => {
           <h1 className="title-text">404 Not Found</h1>
           <span className="title-tip">请检查您的路径</span>
         </div>
+      </main>
     </Layout>
   );
 };
