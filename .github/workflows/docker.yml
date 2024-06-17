@@ -1,9 +1,9 @@
 name: Publish Docker image
 
 on:
-  push:
-    branches:
-      - 'master'
+  release:
+    types: [published]
+  workflow_dispatch:
 
 jobs:
   build-docker:
@@ -34,7 +34,7 @@ jobs:
         with:
           images: |
             ${{ secrets.DOCKER_USERNAME }}/dailytrands-api
-          
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
@@ -42,6 +42,7 @@ jobs:
           file: ./Dockerfile
           platforms: |
             linux/amd64
+            linux/arm64
           push: true
-          labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
