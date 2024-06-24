@@ -119,6 +119,26 @@ export type RouterType = {
     rawUrl: string;
     query: string;
   };
+  miyoushe: {
+    post: {
+      post_id: string;
+      subject: string;
+      content: string;
+      cover: string;
+      created_at: number;
+    };
+    stat: {
+      view_num: number;
+    };
+    user: {
+      nickname: string;
+    };
+    image_list: [
+      {
+        url: string;
+      },
+    ];
+  };
   weread: {
     readingCount: number;
     bookInfo: {
@@ -155,6 +175,22 @@ export type RouterType = {
     author: {
       nickname: string;
     };
+  };
+  lol: {
+    sAuthor: string;
+    sIMG: string;
+    sTitle: string;
+    iTotalPlay: string;
+    iDocID: string;
+    sCreated: string;
+  };
+  ngabbs: {
+    tid: number;
+    subject: string;
+    author: string;
+    tpcurl: string;
+    replies: number;
+    postdate: number;
   };
   tieba: {
     topic_id: number;
@@ -232,5 +268,13 @@ export type RouterType = {
     hotRankScore: string;
     period: string;
     productId: string;
+  };
+  history: {
+    year: string;
+    title: string;
+    link: string;
+    desc: string;
+    cover: string;
+    pic_share: string;
   };
 };
