@@ -119,26 +119,6 @@ export type RouterType = {
     rawUrl: string;
     query: string;
   };
-  miyoushe: {
-    post: {
-      post_id: string;
-      subject: string;
-      content: string;
-      cover: string;
-      created_at: number;
-    };
-    stat: {
-      view_num: number;
-    };
-    user: {
-      nickname: string;
-    };
-    image_list: [
-      {
-        url: string;
-      },
-    ];
-  };
   weread: {
     readingCount: number;
     bookInfo: {
@@ -268,6 +248,36 @@ export type RouterType = {
     hotRankScore: string;
     period: string;
     productId: string;
+  };
+  hupu: {
+    tid: number;
+    title: string;
+    replies: number;
+    username: string;
+    time: string;
+    url: string;
+  };
+  sina: {
+    base: {
+      base: {
+        uniqueId: string;
+        url: string;
+      };
+    };
+    info: {
+      hotValue: string;
+      title: string;
+    };
+  };
+  "sina-news": {
+    id: string;
+    title: string;
+    media: string;
+    url: string;
+    create_date: string;
+    create_time: string;
+    top_num: string;
+    time: string;
   };
   history: {
     year: string;
